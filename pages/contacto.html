@@ -1,115 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Escuela de yoga especializada en cursos para ensenantes"
+    />
+    <meta name="author" content="Franco Ariel Parente" />
+    <title>Om | YOGA SCHOOL</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-  <title> Om | YOGA SCHOOL </title>
-  <link rel="stylesheet" href="../css/estilos.css" />
-  <link rel="shortcut icon" href="../img/icons/favicon.png" />
-</head>
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="shortcut icon" href="../img/icons/favicon.png" />
+  </head>
 
-<body>
-  <header>
-    <div class="header__logo hvr-float">
-      <a href="../index.html">
-        <img src="/img/icons/yogaval.png" alt="logoyoga" />
-      </a>
-    </div>
-    <nav class="header__menu">
-      <ul>
-        <li>
-          <a href="../index.html" class="hvr-grow-shadow">Inicio</a>
-        </li>
-        <li>
-          <a href="acercade.html" class="hvr-grow-shadow">Acerca de</a>
-        </li>
-        <li>
-          <a href="cursos.html" class="hvr-grow-shadow">Cursos</a>
-        </li>
-        <li>
-          <a href="profesores.html" class="hvr-grow-shadow">Profesores</a>
-        </li>
-        <li>
-          <a href="contacto.html" class="hvr-grow-shadow">Contacto</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="main form background-form">
-    <article>
-      <div>
-        <h1 class="contact">Contactanos</h1>
-        <form class="main__formulario" action="">
-          <fieldset>
-            <legend>
-              Ingresa tus datos y nos comunicaremos a la brevedad
-            </legend>
-            <label for="fname"></label><br />
-            <input type="text" placeholder="Nombre" name="fname" required />
-            <label for="lname"></label><br />
-            <input type="text" placeholder="Apellido" name="lname" required />
-            <label for="email" name="email"></label><br />
-            <input type="email" placeholder="Ingresa tu correo electronico:" name="email" required />
-            <label for="hombre">Hombre</label>
-            <input type="radio" name="hombre" value="Hombre" required />
-            <label for="mujer">Mujer</label>
-            <input type="radio" name="mujer" value="Mujer" required /><br />
-
-            <label for="news">Recibe noticias de nuestros cursos</label>
-            <input type="checkbox" name="news" value="news" required />
-            <br />
-
-            <label for="cursos">Elige el curso:</label>
-            <select name="cursos" form="cursos">
-              <option value="marzo">Marzo</option>
-              <option value="junio">Junio</option>
-              <option value="octubre">Octubre</option>
-            </select>
-            <textarea name="" placeholder="Mensaje"></textarea>
-
-            <input type="submit" value="Enviar" class="hvr-grow-shadow" />
-          </fieldset>
-        </form>
+  <body class="contacto">
+    <header>
+      <div class="header__logo hvr-float">
+        <a href="../index.html">
+          <img src="/img/icons/yogaval.png" alt="logoyoga" />
+        </a>
       </div>
-    </article>
+      <nav class="header__menu">
+        <ul>
+          <li>
+            <a href="../index.html" class="hvr-grow-shadow">Inicio</a>
+          </li>
+          <li>
+            <a href="acercade.html" class="hvr-grow-shadow">Acerca de</a>
+          </li>
+          <li>
+            <a href="cursos.html" class="hvr-grow-shadow">Cursos</a>
+          </li>
+          <li>
+            <a href="profesores.html" class="hvr-grow-shadow">Profesores</a>
+          </li>
+          <li>
+            <a href="contacto.html" class="hvr-grow-shadow">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="main__contactoIframe">
-      <h2>O veni directamente a vernos a:</h2>
-      <iframe class="ubicacion"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.0994121280846!2d-58.51358578459347!3d-34.55103826222018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb720e091037d%3A0x302e1a92ed1e91a0!2sFrancisco%20N.%20de%20Laprida%204477%2C%20B1603ABA%20Villa%20Martelli%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2sit!4v1655628709690!5m2!1ses!2sit"
-        allowfullscreen width="100%" height="350px" id="iframe">
-      </iframe>
-    </div>
-  </section>
-  <footer>
-    <div class="footer__autor hvr-grow-shadow">
-      <h4>Creado por Franco Ariel Parente 2022</h4>
-    </div>
+    <section class="main form background-form">
+      <article>
+        <div>
+          <h1 class="contact">Contactanos</h1>
+          <form class="main__formulario" action="">
+            <fieldset>
+              <legend>
+                Ingresa tus datos y nos comunicaremos a la brevedad
+              </legend>
+              <label for="fname"></label><br />
+              <input type="text" placeholder="Nombre" name="fname" required />
+              <label for="lname"></label><br />
+              <input type="text" placeholder="Apellido" name="lname" required />
+              <label for="email" name="email"></label><br />
+              <input
+                type="email"
+                placeholder="Ingresa tu correo electronico:"
+                name="email"
+                required
+              />
+              <label for="hombre">Hombre</label>
+              <input type="radio" name="hombre" value="Hombre" required />
+              <label for="mujer">Mujer</label>
+              <input type="radio" name="mujer" value="Mujer" required /><br />
 
-    <div class="footer__social">
+              <label for="news">Recibe noticias de nuestros cursos</label>
+              <input type="checkbox" name="news" value="news" required />
+              <br />
 
-      <div class="socialitem hvr-grow-shadow ">
-        <a href="#"><img id="itemcolor" src="../img/icons/facebook.png" alt="facebook"></a>
+              <label for="cursos">Elige el curso:</label>
+              <select name="cursos" form="cursos">
+                <option value="marzo">Marzo</option>
+                <option value="junio">Junio</option>
+                <option value="octubre">Octubre</option>
+              </select>
+              <textarea name="" placeholder="Mensaje"></textarea>
+
+              <input type="submit" value="Enviar" class="hvr-grow-shadow" />
+            </fieldset>
+          </form>
+        </div>
+      </article>
+
+      <div class="main__contactoIframe">
+        <h2>O veni directamente a vernos a:</h2>
+        <iframe
+          class="ubicacion"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.0994121280846!2d-58.51358578459347!3d-34.55103826222018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb720e091037d%3A0x302e1a92ed1e91a0!2sFrancisco%20N.%20de%20Laprida%204477%2C%20B1603ABA%20Villa%20Martelli%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2sit!4v1655628709690!5m2!1ses!2sit"
+          allowfullscreen
+          width="100%"
+          height="350px"
+          id="iframe"
+        >
+        </iframe>
       </div>
-      <div class="socialitem hvr-grow-shadow">
-        <a href="#"><img id="itemcolor" src="../img/icons/instagram.png" alt="instagram"></a>
-      </div>
-      <div class="socialitem hvr-grow-shadow">
-        <a href="#"><img id="itemcolor" src="../img/icons/youtube.png" alt="youtube"></a>
-      </div>
-      <div class="socialitem hvr-grow-shadow">
-        <a href="#"><img id="itemcolor" src="../img/icons/whatsapp.png" alt="whatsapp"></a>
-      </div>
-      <div class="socialitem hvr-grow-shadow">
-        <a href="#"><img id="itemcolor" src="../img/icons/twitter.png" alt="twitter"></a>
+    </section>
+    <footer>
+      <div class="footer__autor hvr-grow-shadow">
+        <h4>Creado por Franco Ariel Parente 2022</h4>
       </div>
 
-    </div>
-  </footer>
-</body>
-
+      <div class="footer__social">
+        <div class="socialitem hvr-grow-shadow">
+          <a href="#"
+            ><img id="itemcolor" src="../img/icons/facebook.png" alt="facebook"
+          /></a>
+        </div>
+        <div class="socialitem hvr-grow-shadow">
+          <a href="#"
+            ><img
+              id="itemcolor"
+              src="../img/icons/instagram.png"
+              alt="instagram"
+          /></a>
+        </div>
+        <div class="socialitem hvr-grow-shadow">
+          <a href="#"
+            ><img id="itemcolor" src="../img/icons/youtube.png" alt="youtube"
+          /></a>
+        </div>
+        <div class="socialitem hvr-grow-shadow">
+          <a href="#"
+            ><img id="itemcolor" src="../img/icons/whatsapp.png" alt="whatsapp"
+          /></a>
+        </div>
+        <div class="socialitem hvr-grow-shadow">
+          <a href="#"
+            ><img id="itemcolor" src="../img/icons/twitter.png" alt="twitter"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

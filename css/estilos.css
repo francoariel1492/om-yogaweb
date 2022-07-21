@@ -25,15 +25,12 @@
 
 @font-face {
   font-family: "gloria";
-  src: url("font/GloriaHallelujah-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+  src: url(./font/GloriaHallelujah-Regular.ttf);
 }
 
-
-
-
 /* /////////////////TRANSITION/ANIMATION///////////////////*  */
-
-
 
 .hvr-float {
   display: inline-block;
@@ -76,7 +73,6 @@
   transform: scale(1.1);
 }
 
-
 .hvr-box-shadow-outset {
   display: inline-block;
   vertical-align: middle;
@@ -95,59 +91,54 @@
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
 }
 
-@keyframes coloresfuente {
-  0% {
-    color: #646464;
-  }
-
-  50% {
-    color: #000;
-  }
-
-  100% {
-    color: #fff8cd;
-  }
-}
-
-@keyframes colores {
-  0% {
-    background: #fff8cd;
-  }
-
-  50% {
-    background: #ffe05d;
-  }
-
-  100% {
-    background: #646464;
-  }
+.animate__animated.animate__fadeIn {
+  --animate-duration: 5s;
 }
 
 /* ///////////////////////////////* GENERAL ///////////////////////////////// */
 
+.index {
+  height: 110vh;
+  background-image: url(/img/textures/moodywalk-lYHp4RcJNcY-unsplash.jpg);
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.contacto {
+  background-image: url(/img/textures/image_processing20200922-23823-1086amb.gif);
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.acercade {
+  background-image: url(/img/textures/image_processing20211227-1578-161p7db.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+#bodycursos {
+  height: 120vh;
+  background-image: url(/img/textures/jr-korpa-XEJDsC5Tzec-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#profesores {
+  background-image: url(/img/textures/joris-visser-aT-R6XnS3Ww-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 h1 {
   font-size: 50px;
-  /* padding: 10px; */
 }
 
 h2 {
   font-size: 35px;
-  /* padding: 10px; */
 }
-
-h1,
-h2,
-p,
-form,
-.mainTable,
-.footer__autor{
-   animation-iteration-count: infinite;
-  animation-name: coloresfuente;
-  animation-duration: 5s;
-  padding-bottom: 5px; 
-}
-
-
 
 p {
   padding: 25px;
@@ -156,13 +147,10 @@ p {
 
 body {
   font-family: "gloria";
-  background-size: auto;
+  /*   background-size: auto;
   background-attachment: fixed;
-  background-repeat: repeat;
-  color: #646464;
-  animation-name: colores;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+  background-repeat: repeat; */
+  color: #fff8cd;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto 3fr auto;
@@ -192,24 +180,23 @@ header {
 
   flex-direction: column;
   padding: 5px;
-  background-color: #ff9642;
+  background: rgb(255, 224, 93);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 224, 93, 0.7) 50%,
+    rgba(255, 150, 66, 0.7) 100%
+  );
 }
 
 .header__logo a img {
-  width: 30%;
-  max-width: 500px;
+  width: 25%;
 }
-
 
 ul {
   margin-bottom: 0;
-
-
 }
-
 .header__menu ul li {
-  display: inline;
-
+  display: block;
 }
 
 .header__menu ul li a {
@@ -225,6 +212,12 @@ ul {
   text-decoration: underline;
   width: auto;
 }
+
+/* ////////////////////escuela/////////////////////////*/
+
+/* .carouselfont {
+  color: #ff9642;
+} */
 
 /* ///////////////////////////////* ACERCA DE ///////////////////////////////// */
 
@@ -245,18 +238,7 @@ ul {
   height: 100%;
   border: none;
 }
-
-/* 
-.video iframe {
-  width: 100%;
-  height: 300px;
-} */
-
 /* ///////////////////////////////* CURSOS ///////////////////////////////// */
-
-#bodycursos {
-  height: 900px;
-}
 
 .mainTable {
   display: flex;
@@ -284,7 +266,6 @@ th:hover {
 td:hover {
   background-color: #ff9642;
 }
-
 
 /* ///////////////////////////////* CONTACTO ///////////////////////////////// */
 
@@ -320,11 +301,12 @@ td:hover {
 }
 
 .main__formulario input[type="submit"] {
+  color: #ff9642;
   width: 250px;
   margin: 20px auto;
   margin-bottom: 10px;
-  background: none;
-  border: 1px solid #646464;
+  background: #fff8cd;
+  border: 1px solid #fff8cd;
   padding: 20px;
   cursor: pointer;
   font-size: 16px;
@@ -332,6 +314,7 @@ td:hover {
 
 .main__formulario input[type="submit"]:hover {
   background: #ff9642;
+  color: #fff8cd;
 }
 
 .main__formulario textarea {
@@ -341,45 +324,45 @@ td:hover {
   max-width: 100%;
 }
 
-
-
-
 /* ///////////////////////////////* FOOTER ///////////////////////////////// */
 footer {
   grid-area: footer;
   display: flex;
   flex-direction: column;
-  background: #ff9642;
   text-align: center;
   justify-content: center;
   align-items: center;
+
+  background: rgb(255, 150, 66);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 150, 66, 0.7) 0%,
+    rgba(255, 224, 93, 0.7) 50%
+  );
 }
 
-.footer__social{
+.footer__social {
   display: flex;
   flex-direction: row;
-  width: 75%; 
+  width: 75%;
 }
-.footer__social a img{
+.footer__social a img {
   width: 30%;
   align-self: center;
   justify-self: center;
 }
 
-.socialitem{
+.socialitem {
   width: 20%;
 }
 
-#itemcolor{
-  filter: opacity(0.4) drop-shadow(0 0 0 grey);;
+#itemcolor {
+  filter: opacity(0.4) drop-shadow(0 0 0 grey);
 }
 
-#itemcolor:hover{
-  filter: opacity(1) drop-shadow(0 0 0 grey);;
-  
+#itemcolor:hover {
+  filter: opacity(1) drop-shadow(0 0 0 grey);
 }
-
-
 
 /* /////////////////////// MEDIAQUERIES ////////////////////// */
 
@@ -414,6 +397,10 @@ footer {
     grid-area: yin;
   }
 
+  .header__menu ul li {
+    display: inline;
+  }
+
   .vinyasa {
     grid-area: vinyasa;
   }
@@ -440,8 +427,6 @@ footer {
     display: flex;
     justify-content: space-around;
     margin: 50px;
-
-
   }
 
   .profe img {
@@ -463,7 +448,6 @@ footer {
     align-items: center;
     text-align: justify;
   }
-
   footer {
     display: flex;
     flex-direction: row;
@@ -475,7 +459,6 @@ footer {
     width: 20%;
     max-width: 500px;
   }
-
   .form {
     display: flex;
     flex-direction: column;
@@ -490,7 +473,7 @@ footer {
     width: 75%;
     padding: 20px;
   }
-  .footer__social{
+  .footer__social {
     width: 40%;
   }
 }
