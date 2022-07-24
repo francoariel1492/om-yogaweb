@@ -3,144 +3,127 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta
-      name="description"
-      content="Escuela de yoga especializada en cursos para ensenantes"
-    />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="description" content="Escuela de yoga especializada en cursos para ensenantes"/>
     <meta name="author" content="Franco Ariel Parente" />
     <title>Om | YOGA SCHOOL</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../css/estilos.css" />
     <link rel="shortcut icon" href="../img/icons/favicon.png" />
   </head>
 
-  <body class="contacto">
-    <header>
-      <div class="header__logo hvr-float">
-        <a href="../index.html">
-          <img src="/img/icons/yogaval.png" alt="logoyoga" />
-        </a>
-      </div>
-      <nav class="header__menu">
-        <ul>
-          <li>
-            <a href="../index.html" class="hvr-grow-shadow">Inicio</a>
-          </li>
-          <li>
-            <a href="acercade.html" class="hvr-grow-shadow">Acerca de</a>
-          </li>
-          <li>
-            <a href="cursos.html" class="hvr-grow-shadow">Cursos</a>
-          </li>
-          <li>
-            <a href="profesores.html" class="hvr-grow-shadow">Profesores</a>
-          </li>
-          <li>
-            <a href="contacto.html" class="hvr-grow-shadow">Contacto</a>
-          </li>
-        </ul>
+  <body class="contacto container-fluid text-center">
+    <header class="row header">
+      <nav class="d-flex flex-row align-items-center justify-content-between navbar navbar-expand-md ">
+          <a class="col-3 col-sm-2 col-md-2 col-lg-1 navbar-brand" href="../index.html">
+            <img class="img-fuid w-75" src="../img/icons/yogaval.png" alt="logoweb">
+          </a>
+          <button class="col-2 col-sm-2 col-md-2 navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=" navbar-toggler-icon"></span>
+          </button>
+          <div class="col-2  collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="col-sm-12 justify-content-end navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="" href="metodologia.html">Metodologia Clases</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="">
+                  Escuela
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="profesores.html">Profesores</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="sedes.html">Sedes</a>
+                  </li> 
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="cursos.html">Cursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
       </nav>
     </header>
+    <section class="container-fluid col-lg-6 min-vh-100 align-items-center text-align justify-content-center"> 
+      <h1 class=" text-align p-5 m-5 ">Contactanos</h1>
 
-    <section class="main form background-form">
-      <article>
-        <div>
-          <h1 class="contact">Contactanos</h1>
-          <form class="main__formulario" action="">
-            <fieldset>
-              <legend>
-                Ingresa tus datos y nos comunicaremos a la brevedad
-              </legend>
-              <label for="fname"></label><br />
-              <input type="text" placeholder="Nombre" name="fname" required />
-              <label for="lname"></label><br />
-              <input type="text" placeholder="Apellido" name="lname" required />
-              <label for="email" name="email"></label><br />
-              <input
-                type="email"
-                placeholder="Ingresa tu correo electronico:"
-                name="email"
-                required
-              />
-              <label for="hombre">Hombre</label>
-              <input type="radio" name="hombre" value="Hombre" required />
-              <label for="mujer">Mujer</label>
-              <input type="radio" name="mujer" value="Mujer" required /><br />
-
-              <label for="news">Recibe noticias de nuestros cursos</label>
-              <input type="checkbox" name="news" value="news" required />
-              <br />
-
-              <label for="cursos">Elige el curso:</label>
-              <select name="cursos" form="cursos">
-                <option value="marzo">Marzo</option>
-                <option value="junio">Junio</option>
-                <option value="octubre">Octubre</option>
-              </select>
-              <textarea name="" placeholder="Mensaje"></textarea>
-
-              <input type="submit" value="Enviar" class="hvr-grow-shadow" />
-            </fieldset>
-          </form>
+      <form class="row g-3 d-flex pb-5 mb-5 mw-75">
+        <div class="col-md-6 mw-75">
+          <label for="fname" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="">
         </div>
-      </article>
+        <div class="col-md-6 col-lg-6">
+          <label for="fname" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="">
+        </div>
+        <div class="col-12 col-lg-12">
+          <label for="inputAddress" class="form-label">Direccion</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="">
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <label for="tel" class="form-label">Telefono</label>
+          <input type="tel" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <label for="inputCity" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <label for="inputState" class="form-label">Interes</label>
+          <select id="inputState" class="form-select">
+            <eoption selected>Choos...</eoption>
+            <option>Vinyasa</option>
+            <option>Hata</option>
+            <option>Ying</option>
+            <option>Ashtanga</option>
+          </select>
+        </div>
 
-      <div class="main__contactoIframe">
-        <h2>O veni directamente a vernos a:</h2>
-        <iframe
-          class="ubicacion"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.0994121280846!2d-58.51358578459347!3d-34.55103826222018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb720e091037d%3A0x302e1a92ed1e91a0!2sFrancisco%20N.%20de%20Laprida%204477%2C%20B1603ABA%20Villa%20Martelli%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2sit!4v1655628709690!5m2!1ses!2sit"
-          allowfullscreen
-          width="100%"
-          height="350px"
-          id="iframe"
-        >
-        </iframe>
-      </div>
+        <div class="col-12">
+          <button type="submit" class="boton btn btn-lg btn-secondary">Enviar</button>
+        </div>
+      </form>
     </section>
-    <footer>
-      <div class="footer__autor hvr-grow-shadow">
-        <h4>Creado por Franco Ariel Parente 2022</h4>
-      </div>
-
-      <div class="footer__social">
-        <div class="socialitem hvr-grow-shadow">
-          <a href="#"
-            ><img id="itemcolor" src="../img/icons/facebook.png" alt="facebook"
-          /></a>
+    <footer class="row fluid d-flex align-items-center justify-content-center ">
+      <p class="h6 fluid p-1 m-1">Creado por Franco Ariel Parente 2022</p>
+      <div class="col-6 col-md-2 d-flex justify-content-between  footer__social w p-1 m-1">
+        <div class="socialitem hvr-grow-shadow w-75 m-1 ">
+          <a href="#">
+            <img id="itemcolor" class="img-fluid w-100" src="../img/icons/facebook.png" alt="facebook"/>
+          </a>
         </div>
-        <div class="socialitem hvr-grow-shadow">
-          <a href="#"
-            ><img
-              id="itemcolor"
-              src="../img/icons/instagram.png"
-              alt="instagram"
-          /></a>
+        <div class="socialitem hvr-grow-shadow w-75 m-1">
+          <a href="#">
+            <img id="itemcolor" class="img-fluid w-100" src="../img/icons/instagram.png" alt="instagram"/>
+          </a>
         </div>
-        <div class="socialitem hvr-grow-shadow">
-          <a href="#"
-            ><img id="itemcolor" src="../img/icons/youtube.png" alt="youtube"
-          /></a>
+        <div class="socialitem hvr-grow-shadow w-75 m-1">
+          <a href="#">
+            <img id="itemcolor" class="img-fluid w-100" src="../img/icons/youtube.png" alt="youtube"/>
+          </a>
         </div>
-        <div class="socialitem hvr-grow-shadow">
-          <a href="#"
-            ><img id="itemcolor" src="../img/icons/whatsapp.png" alt="whatsapp"
-          /></a>
+        <div class="socialitem hvr-grow-shadow w-75 m-1">
+          <a href="#">
+            <img id="itemcolor" class="img-fluid w-100" src="../img/icons/whatsapp.png" alt="whatsapp"/>
+          </a>
         </div>
-        <div class="socialitem hvr-grow-shadow">
-          <a href="#"
-            ><img id="itemcolor" src="../img/icons/twitter.png" alt="twitter"
-          /></a>
+        <div class="socialitem hvr-grow-shadow w-75 m-1">
+          <a href="#">
+            <img id="itemcolor" class="img-fluid w-100" src="../img/icons/twitter.png" alt="twitter"/>
+          </a>
         </div>
       </div>
     </footer>

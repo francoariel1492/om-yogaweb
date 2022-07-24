@@ -13,16 +13,6 @@
 
 /* /////////////////RESET///////////////////*  */
 
-* {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 @font-face {
   font-family: "gloria";
   font-style: normal;
@@ -52,7 +42,7 @@
   -webkit-transform: translateY(-8px);
   transform: translateY(-8px);
 }
-
+/*
 .hvr-grow-shadow {
   display: inline-block;
   vertical-align: middle;
@@ -90,15 +80,17 @@
 .hvr-box-shadow-outset:active {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
 }
-
+ */
 .animate__animated.animate__fadeIn {
   --animate-duration: 5s;
+}
+.animate__animated.animate__zoomIn {
+  --animate-duration: 3s;
 }
 
 /* ///////////////////////////////* GENERAL ///////////////////////////////// */
 
 .index {
-  height: 110vh;
   background-image: url(/img/textures/moodywalk-lYHp4RcJNcY-unsplash.jpg);
   background-size: contain;
   background-position: center;
@@ -106,8 +98,8 @@
 }
 
 .contacto {
-  background-image: url(/img/textures/image_processing20200922-23823-1086amb.gif);
-  background-size: contain;
+  background-image: url(/img/textures/sunrise-3848635_960_720.webp);
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
@@ -119,8 +111,14 @@
   background-attachment: fixed;
 }
 #bodycursos {
-  height: 120vh;
   background-image: url(/img/textures/jr-korpa-XEJDsC5Tzec-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#bodysedes {
+  background-image: url(/img/textures/joris-visser-aT-R6XnS3Ww-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -132,54 +130,16 @@
   background-position: center;
   background-attachment: fixed;
 }
-h1 {
-  font-size: 50px;
-}
-
-h2 {
-  font-size: 35px;
-}
-
-p {
-  padding: 25px;
-  line-height: normal;
-}
 
 body {
   font-family: "gloria";
-  /*   background-size: auto;
-  background-attachment: fixed;
-  background-repeat: repeat; */
   color: #fff8cd;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: auto 3fr auto;
-  width: 100%;
-  text-align: center;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
-}
-
-.main {
-  grid-area: main;
-  text-align: center;
-  margin: 20px;
-}
-
-img {
-  width: 100%;
 }
 
 /* ///////////////////////////////* HEADER ///////////////////////////////// */
 
-header {
-  grid-area: header;
-  display: flex;
 
-  flex-direction: column;
-  padding: 5px;
+.header {
   background: rgb(255, 224, 93);
   background: linear-gradient(
     90deg,
@@ -188,9 +148,12 @@ header {
   );
 }
 
-.header__logo a img {
-  width: 25%;
+.dropdown-items,
+.dropdown-menu {
+  background: rgb(255, 224, 93);
+  background: linear-gradient(90deg, rgba(255, 224, 93), rgba(255, 150, 66));
 }
+/*
 
 ul {
   margin-bottom: 0;
@@ -212,148 +175,48 @@ ul {
   text-decoration: underline;
   width: auto;
 }
+ */
+/* ////////////////////Sedes/////////////////////////*/
 
-/* ////////////////////escuela/////////////////////////*/
 
-/* .carouselfont {
-  color: #ff9642;
-} */
 
-/* ///////////////////////////////* ACERCA DE ///////////////////////////////// */
+/* ///////////////////////////////* Mwtodologia ///////////////////////////////// */
 
-.video {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  padding-top: 56.25%;
-}
 
-.video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
+
+
 /* ///////////////////////////////* CURSOS ///////////////////////////////// */
-
-.mainTable {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.card{
+  background-color: rgb(255, 150, 66, 0.6);
 }
 
-td {
-  padding: 25px;
-  border-style: dotted;
-  border-width: 2px;
+.card-link{
+  color:#fff8cd
 }
 
-th {
-  padding: 25px;
-  border-style: dotted;
-  border-width: 2px;
+
+/* ///////////////////////////////* Cursos ///////////////////////////////// */
+.list-group-item{
+  background-color: rgb(100, 100, 100, 0.8);
+  color: #ff9642;
 }
 
-th:hover {
-  background-color: #ff9642;
-}
-
-td:hover {
-  background-color: #ff9642;
-}
 
 /* ///////////////////////////////* CONTACTO ///////////////////////////////// */
-
-.main__formulario input {
-  display: block;
+.boton{
+  background-color: #ff9642;
 }
 
-.main__formulario input[type="text"],
-.main__formulario input[type="email"],
-.main__formulario textarea {
-  width: 80%;
-  margin: 10px auto;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 3px;
-  border: 1px solid #646464;
-}
-
-.main__formulario input[type="radio"] {
-  text-align: center;
-  display: inline-block;
-}
-
-.main__formulario input[type="checkbox"] {
-  text-align: center;
-  display: inline-block;
-}
-
-.main__formulario input[type="text"]:focus,
-.main__formulario input[type="email"]:focus,
-.main__formulario textarea:focus {
-  border: 2px solid #646464;
-}
-
-.main__formulario input[type="submit"] {
-  color: #ff9642;
-  width: 250px;
-  margin: 20px auto;
-  margin-bottom: 10px;
-  background: #fff8cd;
-  border: 1px solid #fff8cd;
-  padding: 20px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.main__formulario input[type="submit"]:hover {
-  background: #ff9642;
-  color: #fff8cd;
-}
-
-.main__formulario textarea {
-  min-height: 120px;
-  max-height: 300px;
-  min-width: 60%;
-  max-width: 100%;
-}
 
 /* ///////////////////////////////* FOOTER ///////////////////////////////// */
 footer {
-  grid-area: footer;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-
+  /* grid-area: footer; */
   background: rgb(255, 150, 66);
   background: linear-gradient(
     90deg,
     rgba(255, 150, 66, 0.7) 0%,
     rgba(255, 224, 93, 0.7) 50%
   );
-}
-
-.footer__social {
-  display: flex;
-  flex-direction: row;
-  width: 75%;
-}
-.footer__social a img {
-  width: 30%;
-  align-self: center;
-  justify-self: center;
-}
-
-.socialitem {
-  width: 20%;
 }
 
 #itemcolor {
@@ -364,116 +227,4 @@ footer {
   filter: opacity(1) drop-shadow(0 0 0 grey);
 }
 
-/* /////////////////////// MEDIAQUERIES ////////////////////// */
 
-@media screen and (min-width: 769px) {
-  .main__yogas {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    width: 90%;
-    text-align: center;
-    grid-gap: 20px;
-    grid-template-areas:
-      "ashtanga    hata"
-      "yin        vinyasa ";
-  }
-
-  .yogasection {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-  }
-
-  .ashtanga {
-    grid-area: ashtanga;
-  }
-
-  .hata {
-    grid-area: hata;
-  }
-
-  .yin {
-    grid-area: yin;
-  }
-
-  .header__menu ul li {
-    display: inline;
-  }
-
-  .vinyasa {
-    grid-area: vinyasa;
-  }
-
-  .yoga {
-    border-style: dashed;
-    border-width: 3px;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-  }
-
-  .profesores {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    width: 100%;
-    text-align: center;
-    grid-gap: 30px;
-  }
-
-  .profesoresSection {
-    display: flex;
-    justify-content: space-around;
-    margin: 50px;
-  }
-
-  .profe img {
-    width: 100%;
-    height: 300px;
-  }
-
-  .video iframe {
-    width: 100%;
-
-    min-height: 300px;
-  }
-
-  header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    align-items: center;
-    text-align: justify;
-  }
-  footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 25px;
-  }
-
-  .header__logo a img {
-    width: 20%;
-    max-width: 500px;
-  }
-  .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .main__contactoIframe {
-    width: 50%;
-  }
-
-  .img {
-    width: 75%;
-    padding: 20px;
-  }
-  .footer__social {
-    width: 40%;
-  }
-}
