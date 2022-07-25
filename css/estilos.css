@@ -159,6 +159,13 @@ body {
   background: linear-gradient(90deg, rgba(255, 224, 93), rgba(255, 150, 66));
 }
 
+ul li a:hover {
+  background: #fff8cd;
+  color: #ff9642 !important ;
+  text-decoration: underline;
+  
+}
+
 /* ////////////////////Sedes/////////////////////////*/
 
 
