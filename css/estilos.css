@@ -95,12 +95,53 @@
 
 /* ///////////////////////////////* GENERAL ///////////////////////////////// */
 
+/*body {
+  background-color: #0C090A;
+  background-image: url(https://images.pexels.com/photos/556416/pexels-photo-556416.jpeg);
+  animation: zoom 30s infinite;
+  -webkit-animation: zoom 30s infinite;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+
+@keyframes zoom {
+  0% {
+    background-size: 100%;
+
+  }
+  50% {
+    background-size: 150%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}*/
+
+
+
 .index {
   background-image: url(/img/textures/moodywalk-lYHp4RcJNcY-unsplash.jpg);
   background-size: contain;
-  background-position: center;
-  background-attachment: fixed;
+  background-position:center;
+  background-attachment:fixed;
+  animation: zoom 30s infinite;
+  -webkit-animation: zoom 30s infinite;
 }
+@keyframes zoom {
+  0% {
+    background-size: 35%;
+  }
+  100% {
+    background-size: 50%;
+  }
+/*   100% {
+    background-size: 75%;
+  } */
+}
+
+
 
 .contacto {
   background-image: url(/img/textures/buda.jpg);
