@@ -144,34 +144,34 @@
 
 
 .contacto {
-  background-image: url(/img/textures/buda.jpg);
+  background-image: url(../img/textures/buda.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
 .acercade {
-  background-image: url(/img/textures/image_processing20211227-1578-161p7db.jpeg);
+  background-image: url(../img/textures/image_processing20211227-1578-161p7db.jpeg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 #bodycursos {
-  background-image: url(/img/textures/jr-korpa-XEJDsC5Tzec-unsplash.jpg);
+  background-image: url(../img/textures/jr-korpa-XEJDsC5Tzec-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
 #bodysedes {
-  background-image: url(/img/textures/joris-visser-aT-R6XnS3Ww-unsplash.jpg);
+  background-image: url(../img/textures/joris-visser-aT-R6XnS3Ww-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
 #profesores {
-  background-image: url(/img/textures/joris-visser-aT-R6XnS3Ww-unsplash.jpg);
+  background-image: url(../img/textures/joris-visser-aT-R6XnS3Ww-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
