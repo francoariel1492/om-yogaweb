@@ -64,9 +64,7 @@
   transform: scale(1.1);
 }
 
-#listcolor{
-  color: black;
-}
+
 
 .hvr-box-shadow-outset {
   display: inline-block;
@@ -93,65 +91,37 @@
   --animate-duration: 3s;
 }
 
+
 /* ///////////////////////////////* GENERAL ///////////////////////////////// */
-
-/*body {
-  background-color: #0C090A;
-  background-image: url(https://images.pexels.com/photos/556416/pexels-photo-556416.jpeg);
-  animation: zoom 30s infinite;
-  -webkit-animation: zoom 30s infinite;
-
-  background-position: center center;
-  background-repeat: no-repeat;
-
-}
-
-@keyframes zoom {
-  0% {
-    background-size: 100%;
-
-  }
-  50% {
-    background-size: 150%;
-  }
-  100% {
-    background-size: 100%;
-  }
-}*/
-
-
-
 .index {
-  background-image: url(../img/moodywalk-lYHp4RcJNcY-unsplash.jpg);
-  background-size: contain;
+  
+  background-color: #05090a;
+  background-image: url(../img/max-vs-PjCh5goo-unsplash.jpg);
+  background-size: auto;
   background-position:center;
-  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-attachment:scroll;
   animation: zoom 30s infinite;
   -webkit-animation: zoom 30s infinite;
 }
 @keyframes zoom {
   0% {
-    background-size: 35%;
-  }
-  100% {
     background-size: 50%;
   }
-/*   100% {
-    background-size: 75%;
-  } */
+  100% {
+    background-size: 100%;
+  }
 }
 
-
-
 .contacto {
-  background-image: url(../img/textures/buda.jpg);
-  background-size: cover;
+  background-image: url(../img/scott-fancher-UKVsYAcVDSU-unsplash.jpg);
+  background-size: contain;
   background-position: center;
   background-attachment: fixed;
 }
 
 .acercade {
-  background-image: url(../img/textures/image_processing20211227-1578-161p7db.jpeg);
+  background-image: url(../img/zen-g42ec84056_1920.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -171,20 +141,17 @@
 }
 
 #profesores {
-  background-image: url(../img/textures/joris-visser-aT-R6XnS3Ww-unsplash.jpg);
+  background-image: url(../img/bw.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
-
 body {
   font-family: "gloria";
   color: #fff8cd;
 }
 
 /* ///////////////////////////////* HEADER ///////////////////////////////// */
-
-
 .header {
   background: rgb(255, 224, 93);
   background: linear-gradient(
@@ -258,4 +225,49 @@ footer {
   filter: opacity(1) drop-shadow(0 0 0 grey);
 }
 
+#colorautor{
+  text-decoration: none;
+  color: #fff8cd;
+}
 
+/* @media screen and (max-width: 769px){
+
+  .index {
+    background-color: #05090a;
+    background-image: url(../img/max-vs-PjCh5goo-unsplash.jpg);
+    background-size:  auto;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    animation: zoom 30s infinite;
+    -webkit-animation: zoom 30s infinite;
+  }
+
+  
+} */
+
+
+
+@media screen and (max-width: 769px){
+
+  .index {
+    background-color: #05090a;
+    background-image: url(../img/max-vs-PjCh5goo-unsplash.jpg);
+    background-size: auto;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    animation: zoom 15s infinite;
+    -webkit-animation: zoom 15s infinite;
+  }
+  @keyframes zoom {
+    0% {
+      background-size: 150%;
+    }
+    100% {
+      background-size: 200%;
+    }
+  }
+
+  
+}
