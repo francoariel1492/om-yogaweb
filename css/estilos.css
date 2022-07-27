@@ -202,13 +202,17 @@ ul li a:hover {
 
 /* ///////////////////////////////* CONTACTO ///////////////////////////////// */
 .boton{
+  color: #fff8cd;
+  background-color: #646464;
+}
+
+.boton:hover{
   background-color: #ff9642;
 }
 
 
 /* ///////////////////////////////* FOOTER ///////////////////////////////// */
 footer {
-  /* grid-area: footer; */
   background: rgb(255, 150, 66);
   background: linear-gradient(
     90deg,
@@ -229,24 +233,6 @@ footer {
   text-decoration: none;
   color: #fff8cd;
 }
-
-/* @media screen and (max-width: 769px){
-
-  .index {
-    background-color: #05090a;
-    background-image: url(../img/max-vs-PjCh5goo-unsplash.jpg);
-    background-size:  auto;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    animation: zoom 30s infinite;
-    -webkit-animation: zoom 30s infinite;
-  }
-
-  
-} */
-
-
 
 @media screen and (max-width: 769px){
 
@@ -269,5 +255,45 @@ footer {
     }
   }
 
+  .contacto {
+    background-image: url(../img/scott-fancher-UKVsYAcVDSU-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+  }
   
+  .acercade {
+    
+    background-image: url(../img/zen-g42ec84056_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  
+  }
+  #bodycursos {
+    background-image: url(../img/textures/jr-korpa-XEJDsC5Tzec-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  #bodysedes {
+    background-image: url(../img/textures/joris-visser-aT-R6XnS3Ww-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  #profesores {
+    background-color: #0e0e0e;
+    background-image: url(../img/bw.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
 }

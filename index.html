@@ -43,53 +43,63 @@
           </div>
       </nav>
     </header>
-        <section id="colorfuente" class="row min-vh-100 align-items-center animate__animated animate__fadeIn"">
-          <article class="col">
-            <h1 class="display-1 p-4 m-4">Cursos de yoga y meditacion</h1>
-            <section class="col">
-              <p class="lead p-1 m-1">
-                A la hora de cruzar el puente entre el conciente y el subconciente nosotros estaremos ahi para guiarte
-                
-              </p> 
-            </section>
-          </article>
-          
-        </section>
+    
+    <section id="colorfuente" class="row min-vh-100 align-items-center animate__animated animate__fadeIn"">
+      <article class="col">
+        <h1 class="display-1 p-4 m-4">Cursos de yoga y meditacion</h1>
+        <section class="col">
+          <p class="lead p-1 m-1 pb-5">
+            A la hora de cruzar el puente entre el conciente y el subconciente nosotros estaremos ahi para guiarte <br>
+          </p> 
 
-        <footer class="row fluid d-flex align-items-center justify-content-center ">
-          <a id="colorautor" class="h6 fluid p-1 m-1" href="https://www.linkedin.com/in/franco-ariel-parente-41694022a">Creado por Franco Ariel Parente 2022</a>
-          <div class="col-6 col-md-2 d-flex justify-content-between  footer__social w p-1 m-1">
-            <div class="socialitem hvr-grow-shadow w-75 m-1 ">
-              <a href="#">
-                <img id="itemcolor" class="img-fluid w-100" src="img/icons/facebook.png" alt="facebook"/>
-              </a>
-            </div>
-            <div class="socialitem hvr-grow-shadow w-75 m-1">
-              <a href="#">
-                <img id="itemcolor" class="img-fluid w-100" src="img/icons/instagram.png" alt="instagram"/>
-              </a>
-            </div>
-            <div class="socialitem hvr-grow-shadow w-75 m-1">
-              <a href="#">
-                <img id="itemcolor" class="img-fluid w-100" src="img/icons/youtube.png" alt="youtube"/>
-              </a>
-            </div>
-            <div class="socialitem hvr-grow-shadow w-75 m-1">
-              <a href="#">
-                <img id="itemcolor" class="img-fluid w-100" src="img/icons/whatsapp.png" alt="whatsapp"/>
-              </a>
-            </div>
-            <div class="socialitem hvr-grow-shadow w-75 m-1">
-              <a href="#">
-                <img id="itemcolor" class="img-fluid w-100" src="img/icons/twitter.png" alt="twitter"/>
-              </a>
-            </div>
-          </div>
-        </footer>
-        <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-          crossorigin="anonymous">
-        </script>
+          <a class="boton btn btn-lg btn-outline-dark" href="pages/cursos.html" role="button">Cursos 2023</a>
+      </article>
+    </section>
+    
+    
+
+
+    <footer class="row fluid d-flex align-items-center justify-content-center ">
+      <a id="colorautor" class="h6 fluid p-1 m-1" href="https://www.linkedin.com/in/franco-ariel-parente-41694022a">Creado por Franco Ariel Parente 2022</a>
+      <div class="col-6 col-md-2 d-flex justify-content-between  footer__social w p-1 m-1">
+        <div class="socialitem hvr-grow-shadow w-75 m-1 ">
+          <a href="#">
+            <img id="itemcolor" class="img-fluid w-100" src="img/icons/facebook.png" alt="facebook"/>
+          </a>
+        </div>
+        <div class="socialitem hvr-grow-shadow w-75 m-1">
+          <a href="#">
+            <img id="itemcolor" class="img-fluid w-100" src="img/icons/instagram.png" alt="instagram"/>
+          </a>
+        </div>
+        <div class="socialitem hvr-grow-shadow w-75 m-1">
+          <a href="#">
+            <img id="itemcolor" class="img-fluid w-100" src="img/icons/youtube.png" alt="youtube"/>
+          </a>
+        </div>
+        <div class="socialitem hvr-grow-shadow w-75 m-1">
+          <a href="#">
+            <img id="itemcolor" class="img-fluid w-100" src="img/icons/whatsapp.png" alt="whatsapp"/>
+          </a>
+        </div>
+        <div class="socialitem hvr-grow-shadow w-75 m-1">
+          <a href="#">
+            <img id="itemcolor" class="img-fluid w-100" src="img/icons/twitter.png" alt="twitter"/>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous">
+    </script>
+    <script>
+      window.onload = (event) => {
+        let myAlert = document.querySelector('.toast');
+        let bsAlert = new bootstrap.Toast(myAlert);
+        bsAlert.show();
+      }
+    </script>
   </body>
 </html>
