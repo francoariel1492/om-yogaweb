@@ -1,17 +1,18 @@
 /* ///////////////////////CSS SECCIONES/////////////////////////
 
--RESET
+-FUENTE
 -TRANSITION/ANIMATIONS
--GENERAL
+-BACKGROUNDS PAGINAS
 -HEADER
--ACERCADE
+-METODOLOGIA
+-SEDES
 -CURSOS
 -CONTACTO
 -FOOTER
 -MEDIAQUERIES
  */
 
-/* /////////////////RESET///////////////////*  */
+/* /////////////////Fuente///////////////////*  */
 
 @font-face {
   font-family: "gloria";
@@ -64,8 +65,6 @@
   transform: scale(1.1);
 }
 
-
-
 .hvr-box-shadow-outset {
   display: inline-block;
   vertical-align: middle;
@@ -91,10 +90,8 @@
   --animate-duration: 3s;
 }
 
-
 /* ///////////////////////////////* GENERAL ///////////////////////////////// */
 .index {
-  
   background-color: #05090a;
   background-image: url(../img/max-vs-PjCh5goo-unsplash.jpg);
   background-size: auto;
@@ -104,6 +101,7 @@
   animation: zoom 30s infinite;
   -webkit-animation: zoom 30s infinite;
 }
+
 @keyframes zoom {
   0% {
     background-size: 50%;
@@ -161,12 +159,6 @@ body {
   );
 }
 
-.dropdown-items,
-.dropdown-menu {
-  background: rgb(255, 224, 93);
-  background: linear-gradient(90deg, rgba(255, 224, 93), rgba(255, 150, 66));
-}
-
 ul li a:hover {
   background: #fff8cd;
   color: #ff9642 !important ;
@@ -174,11 +166,17 @@ ul li a:hover {
   
 }
 
+
+/* ///////////////////////////////* Mwtodologia ///////////////////////////////// */
+
+
+
+
+
+
 /* ////////////////////Sedes/////////////////////////*/
 
 
-
-/* ///////////////////////////////* Mwtodologia ///////////////////////////////// */
 
 
 
@@ -192,15 +190,13 @@ ul li a:hover {
   color:#fff8cd
 }
 
-
-/* ///////////////////////////////* Cursos ///////////////////////////////// */
 .list-group-item{
   background-color: rgb(100, 100, 100, 0.8);
   color: #ff9642;
 }
 
-
 /* ///////////////////////////////* CONTACTO ///////////////////////////////// */
+
 .boton{
   color: #fff8cd;
   background-color: #646464;
@@ -210,8 +206,8 @@ ul li a:hover {
   background-color: #ff9642;
 }
 
-
 /* ///////////////////////////////* FOOTER ///////////////////////////////// */
+
 footer {
   background: rgb(255, 150, 66);
   background: linear-gradient(
@@ -233,6 +229,10 @@ footer {
   text-decoration: none;
   color: #fff8cd;
 }
+
+
+/* ///////////////////////////////* MEDIAQUERIES ///////////////////////////////// */
+
 
 @media screen and (max-width: 769px){
 
