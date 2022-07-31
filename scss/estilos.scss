@@ -6,89 +6,27 @@
 -FOOTER
 -MEDIAQUERIES
  */
-.index {
-  background-color: #05090a;
-  background-image: url(../img/max-vs-PjCh5goo-unsplash.jpg);
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  animation: zoom 30s infinite;
-  -webkit-animation: zoom 30s infinite;
-}
 
-@keyframes zoom {
-  0% {
-    background-size: 50%;
-  }
-  100% {
-    background-size: 100%;
-  }
-}
-.contacto {
-  background-image: url(../img/scott-fancher-UKVsYAcVDSU-unsplash.jpg);
-  background-size: contain;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.boton {
-  color: #fff8cd;
-  background-color: #646464;
-}
-.boton:hover {
-  background-color: #ff9642;
-}
-
-.metodologia {
-  background-image: url(../img/zen-g42ec84056_1920.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-#bodycursos {
-  background-image: url(../img/textures/jr-korpa-XEJDsC5Tzec-unsplash.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.card {
-  background-color: rgba(255, 150, 66, 0.6);
-}
-
-.card-link {
-  color: #fff8cd;
-}
-
-.list-group-item {
-  background-color: rgba(100, 100, 100, 0.8);
-  color: #ff9642;
-}
-
-#bodysedes {
-  background-image: url(../img/textures/joris-visser-aT-R6XnS3Ww-unsplash.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-#profesores {
-  background-image: url(../img/bw.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
+@import "index";
+@import "colores";
+@import "variables";
+@import "contacto";
+@import "metodologia";
+@import "cursos";
+@import "sedes";
+@import "profesores";
 
 /* /////////////////Fuente///////////////////*  */
+
 @font-face {
   font-family: "gloria";
   font-style: normal;
   font-weight: normal;
   src: url(./font/GloriaHallelujah-Regular.ttf);
 }
+
 /* /////////////////TRANSITION/ANIMATION///////////////////*  */
+
 .hvr-float {
   display: inline-block;
   vertical-align: middle;
@@ -152,33 +90,42 @@
 .animate__animated.animate__fadeIn {
   --animate-duration: 5s;
 }
-
 .animate__animated.animate__zoomIn {
   --animate-duration: 3s;
 }
 
 /* ///////////////////////////////* GENERAL ///////////////////////////////// */
+
 body {
   font-family: "gloria";
-  color: #fff8cd;
+  color: $primary-color;
 }
-
 /* ///////////////////////////////* HEADER ///////////////////////////////// */
 .header {
   background: rgb(255, 224, 93);
-  background: linear-gradient(90deg, rgba(255, 224, 93, 0.7) 50%, rgba(255, 150, 66, 0.7) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 224, 93, 0.7) 50%,
+    rgba(255, 150, 66, 0.7) 100%
+  );
 }
 
-ul li a:hover {
-  background: #fff8cd;
-  color: #ff9642 !important;
-  text-decoration: underline;
+ul {
+  li a:hover {
+    background: $primary-color;
+    color: $secondary-color !important ;
+    text-decoration: underline;
+  }
 }
-
 /* ///////////////////////////////* FOOTER ///////////////////////////////// */
+
 footer {
   background: rgb(255, 150, 66);
-  background: linear-gradient(90deg, rgba(255, 150, 66, 0.7) 0%, rgba(255, 224, 93, 0.7) 50%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 150, 66, 0.7) 0%,
+    rgba(255, 224, 93, 0.7) 50%
+  );
 }
 
 #itemcolor {
@@ -191,10 +138,11 @@ footer {
 
 #colorautor {
   text-decoration: none;
-  color: #fff8cd;
+  color: $primary-color;
 }
 
 /* ///////////////////////////////* MEDIAQUERIES ///////////////////////////////// */
+
 @media screen and (max-width: 769px) {
   .index {
     background-color: #05090a;
@@ -214,6 +162,7 @@ footer {
       background-size: 200%;
     }
   }
+
   .contacto {
     background-image: url(../img/scott-fancher-UKVsYAcVDSU-unsplash.jpg);
     background-size: cover;
@@ -221,6 +170,7 @@ footer {
     background-position: center;
     background-attachment: fixed;
   }
+
   .acercade {
     background-image: url(../img/zen-g42ec84056_1920.jpg);
     background-size: cover;
@@ -235,12 +185,14 @@ footer {
     background-position: center;
     background-attachment: fixed;
   }
+
   #bodysedes {
     background-image: url(../img/textures/joris-visser-aT-R6XnS3Ww-unsplash.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
   }
+
   #profesores {
     background-color: #0e0e0e;
     background-image: url(../img/bw.jpg);
@@ -250,5 +202,3 @@ footer {
     background-attachment: fixed;
   }
 }
-
-/*# sourceMappingURL=estilos.css.map */
