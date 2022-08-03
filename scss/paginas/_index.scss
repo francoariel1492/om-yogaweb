@@ -7,6 +7,17 @@
     background-attachment: scroll;
     animation: zoom 30s infinite;
     -webkit-animation: zoom 30s infinite;
+
+    .boton{
+      color: $primary-color;
+      background-color: #646464;
+      transition: 1s;
+
+      &:hover{
+          background-color: $secondary-color;
+      }
+
+  }
 }
 
 @keyframes zoom {

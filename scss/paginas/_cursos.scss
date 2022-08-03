@@ -1,0 +1,26 @@
+#bodycursos {
+    background-image: url(../img/textures/jr-korpa-XEJDsC5Tzec-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    .list-group-item {
+        background-color: rgb(100, 100, 100, 0.8);
+        color: $secondary-color;
+    }
+    .card {
+        background-color: rgb(255, 150, 66, 0.6);
+        .boton {
+            background-color: $third-color;
+            color: $primary-color;
+            transition: 1s;
+            &:hover{
+                background-color: $fourth-color;
+                color: $third-color;
+            }
+        }
+    }
+
+}  
+
+

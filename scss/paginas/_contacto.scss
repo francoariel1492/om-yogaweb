@@ -3,14 +3,17 @@
     background-size: contain;
     background-position: center;
     background-attachment: fixed;
-}
 
-.boton {
-    color: $primary-color;
-    background-color: #646464;
+    .boton{
+        color: $primary-color;
+        background-color: #646464;
+        transition: 1s;
 
         &:hover{
             background-color: $secondary-color;
         }
+
+    }
     
 }
+

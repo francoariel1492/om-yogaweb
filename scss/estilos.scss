@@ -2,21 +2,21 @@
 
 -FUENTE
 -TRANSITION/ANIMATIONS
--HEADER
--FOOTER
 -MEDIAQUERIES
  */
 
-@import "index";
 @import "colores";
 @import "variables";
-@import "contacto";
-@import "metodologia";
-@import "cursos";
-@import "sedes";
-@import "profesores";
+@import "../scss/paginas/index";
+@import "../scss/paginas/contacto";
+@import "../scss/paginas/metodologia";
+@import "../scss/paginas/cursos";
+@import "../scss/paginas/sedes";
+@import "../scss/paginas/profesores";
+@import "../scss/componentes/footer";
+@import "../scss/componentes/header";
 
-/* /////////////////Fuente///////////////////*  */
+/////////////////Fuente///////////////////*/  
 
 @font-face {
   font-family: "gloria";
@@ -25,120 +25,21 @@
   src: url(./font/GloriaHallelujah-Regular.ttf);
 }
 
+/* ///////////////////////////////* GENERAL ///////////////////////////////// */
+
+body {
+  font-family: "gloria";
+  color: $primary-color;
+  
+}
+
 /* /////////////////TRANSITION/ANIMATION///////////////////*  */
-
-.hvr-float {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-
-.hvr-float:hover,
-.hvr-float:focus,
-.hvr-float:active {
-  -webkit-transform: translateY(-8px);
-  transform: translateY(-8px);
-}
-
-.hvr-grow-shadow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform;
-}
-
-.hvr-grow-shadow:hover,
-.hvr-grow-shadow:focus,
-.hvr-grow-shadow:active {
-  color: #fff8cd;
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.hvr-box-shadow-outset {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow;
-  transition-property: box-shadow;
-}
-
-.hvr-box-shadow-outset:hover,
-.hvr-box-shadow-outset:focus,
-.hvr-box-shadow-outset:active {
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
-}
 
 .animate__animated.animate__fadeIn {
   --animate-duration: 5s;
 }
 .animate__animated.animate__zoomIn {
   --animate-duration: 3s;
-}
-
-/* ///////////////////////////////* GENERAL ///////////////////////////////// */
-
-body {
-  font-family: "gloria";
-  color: $primary-color;
-}
-/* ///////////////////////////////* HEADER ///////////////////////////////// */
-.header {
-  background: rgb(255, 224, 93);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 224, 93, 0.7) 50%,
-    rgba(255, 150, 66, 0.7) 100%
-  );
-}
-
-ul {
-  li a:hover {
-    background: $primary-color;
-    color: $secondary-color !important ;
-    text-decoration: underline;
-  }
-}
-/* ///////////////////////////////* FOOTER ///////////////////////////////// */
-
-footer {
-  background: rgb(255, 150, 66);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 150, 66, 0.7) 0%,
-    rgba(255, 224, 93, 0.7) 50%
-  );
-}
-
-#itemcolor {
-  filter: opacity(0.4) drop-shadow(0 0 0 grey);
-}
-
-#itemcolor:hover {
-  filter: opacity(1) drop-shadow(0 0 0 grey);
-}
-
-#colorautor {
-  text-decoration: none;
-  color: $primary-color;
 }
 
 /* ///////////////////////////////* MEDIAQUERIES ///////////////////////////////// */
