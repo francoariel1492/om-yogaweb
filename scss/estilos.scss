@@ -7,14 +7,14 @@
 
 @import "colores";
 @import "variables";
-@import "../scss/paginas/index";
-@import "../scss/paginas/contacto";
-@import "../scss/paginas/metodologia";
-@import "../scss/paginas/cursos";
-@import "../scss/paginas/sedes";
-@import "../scss/paginas/profesores";
-@import "../scss/componentes/footer";
-@import "../scss/componentes/header";
+@import "paginas/index";
+@import "paginas/contacto";
+@import "paginas/metodologia";
+@import "paginas/cursos";
+@import "paginas/sedes";
+@import "paginas/profesores";
+@import "componentes/footer";
+@import "componentes/header";
 
 /////////////////Fuente///////////////////*/  
 
@@ -22,7 +22,7 @@
   font-family: "gloria";
   font-style: normal;
   font-weight: normal;
-  src: url(./font/GloriaHallelujah-Regular.ttf);
+  src: url(../css/font/GloriaHallelujah-Regular.ttf);
 }
 
 /* ///////////////////////////////* GENERAL ///////////////////////////////// */
@@ -38,16 +38,14 @@ body {
 .animate__animated.animate__fadeIn {
   --animate-duration: 5s;
 }
-.animate__animated.animate__zoomIn {
-  --animate-duration: 3s;
-}
+
 
 /* ///////////////////////////////* MEDIAQUERIES ///////////////////////////////// */
 
 @media screen and (max-width: 769px) {
   .index {
     background-color: #05090a;
-    background-image: url(../img/max-vs-PjCh5goo-unsplash.jpg);
+    background-image: url(../img/fondos/index.jpg);
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -65,22 +63,21 @@ body {
   }
 
   .contacto {
-    background-image: url(../img/scott-fancher-UKVsYAcVDSU-unsplash.jpg);
+    background-image: url(../img/fondos/contacto.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
   }
-
-  .acercade {
-    background-image: url(../img/zen-g42ec84056_1920.jpg);
+  .metodologia {
+    background-image: url(../img/fondos/metodologia.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
   }
   #bodycursos {
-    background-image: url(../img/textures/jr-korpa-XEJDsC5Tzec-unsplash.jpg);
+    background-image: url(../img/fondos/cursos.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -88,7 +85,7 @@ body {
   }
 
   #bodysedes {
-    background-image: url(../img/textures/joris-visser-aT-R6XnS3Ww-unsplash.jpg);
+    background-image: url(../img/fondos/sedes.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -96,7 +93,7 @@ body {
 
   #profesores {
     background-color: #0e0e0e;
-    background-image: url(../img/bw.jpg);
+    background-image: url(../img/fondos/profesores.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

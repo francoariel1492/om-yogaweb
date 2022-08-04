@@ -6,7 +6,7 @@
  */
 .index {
   background-color: #05090a;
-  background-image: url(../img/max-vs-PjCh5goo-unsplash.jpg);
+  background-image: url(../img/fondos/index.jpg);
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -32,7 +32,7 @@
   }
 }
 .contacto {
-  background-image: url(../img/scott-fancher-UKVsYAcVDSU-unsplash.jpg);
+  background-image: url(../img/fondos/contacto.jpg);
   background-size: contain;
   background-position: center;
   background-attachment: fixed;
@@ -47,14 +47,14 @@
 }
 
 .metodologia {
-  background-image: url(../img/zen-g42ec84056_1920.jpg);
+  background-image: url(../img/fondos/metodologia.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
 #bodycursos {
-  background-image: url(../img/textures/jr-korpa-XEJDsC5Tzec-unsplash.jpg);
+  background-image: url(../img/fondos/cursos.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -77,14 +77,14 @@
 }
 
 #bodysedes {
-  background-image: url(../img/textures/joris-visser-aT-R6XnS3Ww-unsplash.jpg);
+  background-image: url(../img/fondos/sedes.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
 #profesores {
-  background-image: url(../img/bw.jpg);
+  background-image: url(../img/fondos/profesores.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -105,6 +105,10 @@ footer #itemcolor:hover {
   filter: opacity(1) drop-shadow(0 0 0 grey);
 }
 
+#colorautor:hover {
+  color: #FFE05D;
+}
+
 .hvr-grow-shadow {
   display: inline-block;
   vertical-align: middle;
@@ -112,7 +116,7 @@ footer #itemcolor:hover {
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
   -webkit-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
 }
@@ -182,7 +186,7 @@ footer #itemcolor:hover {
   font-family: "gloria";
   font-style: normal;
   font-weight: normal;
-  src: url(./font/GloriaHallelujah-Regular.ttf);
+  src: url(../css/font/GloriaHallelujah-Regular.ttf);
 }
 /* ///////////////////////////////* GENERAL ///////////////////////////////// */
 body {
@@ -195,15 +199,11 @@ body {
   --animate-duration: 5s;
 }
 
-.animate__animated.animate__zoomIn {
-  --animate-duration: 3s;
-}
-
 /* ///////////////////////////////* MEDIAQUERIES ///////////////////////////////// */
 @media screen and (max-width: 769px) {
   .index {
     background-color: #05090a;
-    background-image: url(../img/max-vs-PjCh5goo-unsplash.jpg);
+    background-image: url(../img/fondos/index.jpg);
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -220,35 +220,35 @@ body {
     }
   }
   .contacto {
-    background-image: url(../img/scott-fancher-UKVsYAcVDSU-unsplash.jpg);
+    background-image: url(../img/fondos/contacto.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
   }
-  .acercade {
-    background-image: url(../img/zen-g42ec84056_1920.jpg);
+  .metodologia {
+    background-image: url(../img/fondos/metodologia.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
   }
   #bodycursos {
-    background-image: url(../img/textures/jr-korpa-XEJDsC5Tzec-unsplash.jpg);
+    background-image: url(../img/fondos/cursos.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
   }
   #bodysedes {
-    background-image: url(../img/textures/joris-visser-aT-R6XnS3Ww-unsplash.jpg);
+    background-image: url(../img/fondos/sedes.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
   }
   #profesores {
     background-color: #0e0e0e;
-    background-image: url(../img/bw.jpg);
+    background-image: url(../img/fondos/profesores.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
