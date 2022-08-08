@@ -5,12 +5,12 @@
     background-attachment: fixed;
 
     .boton{
-        color: $primary-color;
-        background-color: #646464;
+        color: map-get($colors , principal );
+        background-color: map-get($colors , tercero );
         transition: 1s;
 
         &:hover{
-            background-color: $secondary-color;
+            background-color: map-get($colors , segundo );
         }
 
     }

@@ -7,7 +7,7 @@ footer {
 
     #colorautor {
         text-decoration: none;
-        color: $primary-color;}
+        color: map-get($colors , principal );}
         ;
         
 
@@ -22,7 +22,8 @@ footer {
 
 #colorautor:hover {
     
-    color: $fourth-color;}
+    color: map-get($colors , cuarto );
+    transition: 1s}
     ;
 
 .hvr-grow-shadow {
@@ -40,7 +41,7 @@ footer {
 .hvr-grow-shadow:hover,
 .hvr-grow-shadow:focus,
 .hvr-grow-shadow:active {
-    color: #fff8cd;
+    color: map-get($colors , principal );
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);

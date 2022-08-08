@@ -10,8 +10,8 @@
     a {
       transition: 0.5s;
       &:hover {
-        background: $primary-color;
-        color: $secondary-color !important ;
+        background: map-get($colors , principal);
+        color: map-get($colors , segundo) !important;
         text-decoration: underline;
       }
     }

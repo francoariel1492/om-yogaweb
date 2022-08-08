@@ -14,13 +14,14 @@
   animation: zoom 30s infinite;
   -webkit-animation: zoom 30s infinite;
 }
-.index .boton {
-  color: #fff8cd;
+.index .boton, .index #bodycursos .boton--cursos, #bodycursos .index .boton--cursos {
+  color: #FFE05D;
   background-color: #646464;
   transition: 1s;
 }
-.index .boton:hover {
+.index .boton:hover, .index #bodycursos .boton--cursos:hover, #bodycursos .index .boton--cursos:hover {
   background-color: #ff9642;
+  color: #fff8cd;
 }
 
 @keyframes zoom {
@@ -37,12 +38,12 @@
   background-position: center;
   background-attachment: fixed;
 }
-.contacto .boton {
+.contacto .boton, .contacto #bodycursos .boton--cursos, #bodycursos .contacto .boton--cursos {
   color: #fff8cd;
   background-color: #646464;
   transition: 1s;
 }
-.contacto .boton:hover {
+.contacto .boton:hover, .contacto #bodycursos .boton--cursos:hover, #bodycursos .contacto .boton--cursos:hover {
   background-color: #ff9642;
 }
 
@@ -66,13 +67,17 @@
 #bodycursos .card {
   background-color: rgba(255, 150, 66, 0.6);
 }
-#bodycursos .card .boton {
+#bodycursos .boton, #bodycursos .boton--cursos {
   background-color: #646464;
-  color: #fff8cd;
+  color: #FFE05D;
   transition: 1s;
 }
-#bodycursos .card .boton:hover {
+#bodycursos .boton:hover, #bodycursos .boton--cursos:hover {
   background-color: #FFE05D;
+  color: #646464;
+}
+#bodycursos .boton--cursos:hover {
+  background-color: #fff8cd;
   color: #646464;
 }
 
@@ -88,6 +93,40 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+
+.header {
+  background: rgb(255, 224, 93);
+  background: linear-gradient(90deg, rgba(255, 224, 93, 0.7) 50%, rgba(255, 150, 66, 0.7) 100%);
+}
+.header li a {
+  transition: 0.5s;
+}
+.header li a:hover {
+  background: #fff8cd;
+  color: #ff9642 !important;
+  text-decoration: underline;
+}
+
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
 }
 
 footer {
@@ -107,6 +146,7 @@ footer #itemcolor:hover {
 
 #colorautor:hover {
   color: #FFE05D;
+  transition: 1s;
 }
 
 .hvr-grow-shadow {
@@ -146,40 +186,6 @@ footer #itemcolor:hover {
 .hvr-box-shadow-outset:focus,
 .hvr-box-shadow-outset:active {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
-}
-
-.header {
-  background: rgb(255, 224, 93);
-  background: linear-gradient(90deg, rgba(255, 224, 93, 0.7) 50%, rgba(255, 150, 66, 0.7) 100%);
-}
-.header li a {
-  transition: 0.5s;
-}
-.header li a:hover {
-  background: #fff8cd;
-  color: #ff9642 !important;
-  text-decoration: underline;
-}
-
-.hvr-float {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.5s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-
-.hvr-float:hover,
-.hvr-float:focus,
-.hvr-float:active {
-  -webkit-transform: translateY(-8px);
-  transform: translateY(-8px);
 }
 
 @font-face {
@@ -243,13 +249,14 @@ body {
   #bodysedes {
     background-image: url(../img/fondos/sedes.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
   }
   #profesores {
     background-color: #0e0e0e;
     background-image: url(../img/fondos/profesores.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;

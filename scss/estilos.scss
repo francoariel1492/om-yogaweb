@@ -13,8 +13,9 @@
 @import "paginas/cursos";
 @import "paginas/sedes";
 @import "paginas/profesores";
-@import "componentes/footer";
 @import "componentes/header";
+@import "componentes/footer";
+
 
 /////////////////Fuente///////////////////*/  
 
@@ -29,7 +30,7 @@
 
 body {
   font-family: "gloria";
-  color: $primary-color;
+  color: map-get($colors, principal );
   
 }
 
@@ -41,6 +42,13 @@ body {
 
 
 /* ///////////////////////////////* MEDIAQUERIES ///////////////////////////////// */
+
+@mixin background{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
 
 @media screen and (max-width: 769px) {
   .index {
@@ -64,39 +72,25 @@ body {
 
   .contacto {
     background-image: url(../img/fondos/contacto.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    @include background;
   }
   .metodologia {
     background-image: url(../img/fondos/metodologia.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    @include background;
   }
   #bodycursos {
     background-image: url(../img/fondos/cursos.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    @include background;
   }
 
   #bodysedes {
     background-image: url(../img/fondos/sedes.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    @include background;
   }
 
   #profesores {
     background-color: #0e0e0e;
     background-image: url(../img/fondos/profesores.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    @include background;
   }
 }

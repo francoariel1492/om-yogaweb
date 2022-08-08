@@ -9,12 +9,13 @@
     -webkit-animation: zoom 30s infinite;
 
     .boton{
-      color: $primary-color;
-      background-color: #646464;
+      color: map-get($colors , cuarto );
+      background-color: map-get($colors , tercero );
       transition: 1s;
 
       &:hover{
-          background-color: $secondary-color;
+          background-color: map-get($colors , segundo );
+          color: map-get($colors , principal );
       }
 
   }

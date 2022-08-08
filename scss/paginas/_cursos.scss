@@ -6,21 +6,27 @@
 
     .list-group-item {
         background-color: rgb(100, 100, 100, 0.8);
-        color: $secondary-color;
+        color: map-get($colors , segundo );
     }
     .card {
-        background-color: rgb(255, 150, 66, 0.6);
-        .boton {
-            background-color: $third-color;
-            color: $primary-color;
+        background-color: rgb(255, 150, 66, 0.6);}
+            .boton {
+            background-color: map-get($colors , tercero );
+            color: map-get($colors , cuarto );
             transition: 1s;
-            &:hover{
-                background-color: $fourth-color;
-                color: $third-color;
+                &:hover{
+                    background-color: map-get($colors , cuarto );
+                    color: map-get($colors , tercero );
             }
-        }
-    }
+            &--cursos{
+                @extend .boton;
+                &:hover{
+                    background-color: map-get($colors , principal );
+                    color: map-get($colors , tercero )
+                }
 
-}  
+            }
+        } 
+    }
 
 
