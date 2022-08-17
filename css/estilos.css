@@ -88,19 +88,22 @@
   background-position: center;
   background-attachment: fixed;
 }
-#bodysedes .carouseltitle {
-  color: #FFE05D;
-}
 #bodysedes .carouselfont {
-  /*         color: map-get($colors , cuarto );
-          font-weight:bolder;
-          font-size: 1.3rem; */
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   font-weight: bolder;
   font-size: 1.3rem;
   text-shadow: 1px 1px 0 #000000;
+  -webkit-text-stroke: 1px #FFE05D;
+}
+#bodysedes .carouseltitle {
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bolder;
+  font-size: 3rem;
+  text-shadow: 1px 1px 0 #FF9642;
   -webkit-text-stroke: 1px #FFE05D;
 }
 

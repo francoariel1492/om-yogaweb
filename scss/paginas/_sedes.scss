@@ -4,13 +4,7 @@
     background-position: center;
     background-attachment: fixed;
 
-      .carouseltitle{
-        color: map-get($colors, cuarto );
-      }
       .carouselfont{
-/*         color: map-get($colors , cuarto );
-        font-weight:bolder;
-        font-size: 1.3rem; */
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
@@ -18,7 +12,20 @@
         font-size: 1.3rem;
         text-shadow: 
         1px 1px 0 #000000;
-      -webkit-text-stroke: 1px #FFE05D;
+        -webkit-text-stroke: 1px #FFE05D;
+      }
+
+      .carouseltitle{
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: bolder;
+        font-size: 3rem;
+        text-shadow: 
+        1px 1px 0 #FF9642;
+        -webkit-text-stroke: 1px #FFE05D ;
+
+
       }
 }
 
