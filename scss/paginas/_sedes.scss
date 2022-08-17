@@ -3,5 +3,32 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    
+
+      .carouseltitle{
+        color: map-get($colors, cuarto );
+      }
+      .carouselfont{
+/*         color: map-get($colors , cuarto );
+        font-weight:bolder;
+        font-size: 1.3rem; */
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: bolder;
+        font-size: 1.3rem;
+        text-shadow: 
+        1px 1px 0 #000000;
+      -webkit-text-stroke: 1px #FFE05D;
+      }
+}
+
+.carousel-inner {
+  max-height: 800px;
+  img {
+    max-height: 700px;
   }
+}
+
+.carousel-indicators img {
+  max-width: 100px;
+}

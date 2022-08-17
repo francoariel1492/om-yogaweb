@@ -25,14 +25,29 @@
   font-weight: normal;
   src: url(../css/font/GloriaHallelujah-Regular.ttf);
 }
+@font-face{
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: normal;
+  src: url(../css/font/Montserrat-Regular.ttf)
+}
+
+
+
 
 /* ///////////////////////////////* GENERAL ///////////////////////////////// */
 
 body {
   font-family: "gloria";
   color: map-get($colors, principal );
-  
 }
+
+p{
+  font-family: "montserrat";
+  color: map-get($colors, principal );
+}
+
+
 
 /* /////////////////TRANSITION/ANIMATION///////////////////*  */
 
@@ -90,7 +105,7 @@ body {
 
   #profesores {
     background-color: #0e0e0e;
-    background-image: url(../img/fondos/profesores.jpg);
+    background-image: url(../img/fondos/profesoresmobile.jpg);
     @include background;
   }
 }

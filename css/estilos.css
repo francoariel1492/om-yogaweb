@@ -63,6 +63,7 @@
 #bodycursos .list-group-item {
   background-color: rgba(100, 100, 100, 0.8);
   color: #ff9642;
+  font-family: "montserrat";
 }
 #bodycursos .card {
   background-color: rgba(255, 150, 66, 0.6);
@@ -86,6 +87,32 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+#bodysedes .carouseltitle {
+  color: #FFE05D;
+}
+#bodysedes .carouselfont {
+  /*         color: map-get($colors , cuarto );
+          font-weight:bolder;
+          font-size: 1.3rem; */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 0 #000000;
+  -webkit-text-stroke: 1px #FFE05D;
+}
+
+.carousel-inner {
+  max-height: 800px;
+}
+.carousel-inner img {
+  max-height: 700px;
+}
+
+.carousel-indicators img {
+  max-width: 100px;
 }
 
 #profesores {
@@ -194,9 +221,20 @@ footer #itemcolor:hover {
   font-weight: normal;
   src: url(../css/font/GloriaHallelujah-Regular.ttf);
 }
+@font-face {
+  font-family: "montserrat";
+  font-style: normal;
+  font-weight: normal;
+  src: url(../css/font/Montserrat-Regular.ttf);
+}
 /* ///////////////////////////////* GENERAL ///////////////////////////////// */
 body {
   font-family: "gloria";
+  color: #fff8cd;
+}
+
+p {
+  font-family: "montserrat";
   color: #fff8cd;
 }
 
@@ -255,7 +293,7 @@ body {
   }
   #profesores {
     background-color: #0e0e0e;
-    background-image: url(../img/fondos/profesores.jpg);
+    background-image: url(../img/fondos/profesoresmobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
