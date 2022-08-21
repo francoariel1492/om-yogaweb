@@ -34,7 +34,7 @@
 }
 .contacto {
   background-image: url(../img/fondos/contacto.jpg);
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
@@ -83,39 +83,31 @@
 }
 
 #bodysedes {
-  background-image: url(../img/fondos/sedes.jpg);
+  background-image: url(../img/fondos/2.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
-#bodysedes .carouselfont {
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-weight: bolder;
-  font-size: 1.3rem;
-  text-shadow: 1px 1px 0 #000000;
-  -webkit-text-stroke: 1px #FFE05D;
+
+#carouselExampleCaptions, #carouselExampleFade, #carouselExampleControls {
+  margin-top: 10px;
 }
-#bodysedes .carouseltitle {
+#carouselExampleCaptions .carousel-item img, #carouselExampleFade .carousel-item img, #carouselExampleControls .carousel-item img {
+  object-fit: cover;
+}
+
+.carousel-item img {
+  height: 500px;
+}
+
+.carousel .carouseltitle {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   font-weight: bolder;
   font-size: 3rem;
-  text-shadow: 1px 1px 0 #FF9642;
-  -webkit-text-stroke: 1px #FFE05D;
-}
-
-.carousel-inner {
-  max-height: 800px;
-}
-.carousel-inner img {
-  max-height: 700px;
-}
-
-.carousel-indicators img {
-  max-width: 100px;
+  text-shadow: 1px 1px 0 #FFE05D;
+  -webkit-text-stroke: 0.1px #646464;
 }
 
 #profesores {
@@ -250,7 +242,6 @@ p {
 @media screen and (max-width: 769px) {
   .index {
     background-color: #05090a;
-    background-image: url(../img/fondos/index.jpg);
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -266,41 +257,38 @@ p {
       background-size: 200%;
     }
   }
+  .carousel-item img {
+    height: 350px;
+  }
   .contacto {
-    background-image: url(../img/fondos/contacto.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
   }
   .metodologia {
-    background-image: url(../img/fondos/metodologia.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
   }
   #bodycursos {
-    background-image: url(../img/fondos/cursos.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
   }
   #bodysedes {
-    background-image: url(../img/fondos/sedes.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
   }
   #profesores {
-    background-color: #0e0e0e;
-    background-image: url(../img/fondos/profesoresmobile.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+  }
+}
+@media screen and (max-width: 400px) {
+  .carousel-item img {
+    height: 250px;
   }
 }
 

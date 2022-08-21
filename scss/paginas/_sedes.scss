@@ -1,20 +1,24 @@
 #bodysedes {
-    background-image: url(../img/fondos/sedes.jpg);
+    background-image: url(../img/fondos/2.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
 
-      .carouselfont{
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        font-weight: bolder;
-        font-size: 1.3rem;
-        text-shadow: 
-        1px 1px 0 #000000;
-        -webkit-text-stroke: 1px #FFE05D;
-      }
+#carouselExampleCaptions, #carouselExampleFade, #carouselExampleControls {
+  margin-top: 10px;
+  .carousel-item {
+    img {
+      object-fit: cover;
+    }
+  }
+}
 
+.carousel-item img {
+  height: 500px;
+}
+
+.carousel{
       .carouseltitle{
         -webkit-background-clip: text;
         background-clip: text;
@@ -22,20 +26,7 @@
         font-weight: bolder;
         font-size: 3rem;
         text-shadow: 
-        1px 1px 0 #FF9642;
-        -webkit-text-stroke: 1px #FFE05D ;
-
-
+        1px 1px 0 #FFE05D;
+        -webkit-text-stroke: 0.1px #646464;
       }
-}
-
-.carousel-inner {
-  max-height: 800px;
-  img {
-    max-height: 700px;
-  }
-}
-
-.carousel-indicators img {
-  max-width: 100px;
-}
+    }

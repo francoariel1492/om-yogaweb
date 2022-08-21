@@ -32,9 +32,6 @@
   src: url(../css/font/Montserrat-Regular.ttf)
 }
 
-
-
-
 /* ///////////////////////////////* GENERAL ///////////////////////////////// */
 
 body {
@@ -47,20 +44,16 @@ p{
   color: map-get($colors, principal );
 }
 
-
-
 /* /////////////////TRANSITION/ANIMATION///////////////////*  */
 
 .animate__animated.animate__fadeIn {
   --animate-duration: 5s;
 }
 
-
 /* ///////////////////////////////* MEDIAQUERIES ///////////////////////////////// */
 
 @mixin background{
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
 }
@@ -68,7 +61,6 @@ p{
 @media screen and (max-width: 769px) {
   .index {
     background-color: #05090a;
-    background-image: url(../img/fondos/index.jpg);
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -85,27 +77,33 @@ p{
     }
   }
 
+  .carousel-item img {
+    height: 350px;
+  }
+
+
   .contacto {
-    background-image: url(../img/fondos/contacto.jpg);
     @include background;
   }
   .metodologia {
-    background-image: url(../img/fondos/metodologia.jpg);
     @include background;
   }
   #bodycursos {
-    background-image: url(../img/fondos/cursos.jpg);
     @include background;
   }
 
   #bodysedes {
-    background-image: url(../img/fondos/sedes.jpg);
     @include background;
   }
 
   #profesores {
-    background-color: #0e0e0e;
-    background-image: url(../img/fondos/profesoresmobile.jpg);
     @include background;
   }
+}
+
+@media screen and (max-width: 400px) {
+  .carousel-item img {
+    height: 250px;
+  }
+
 }
