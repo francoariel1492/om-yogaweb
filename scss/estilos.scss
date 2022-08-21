@@ -11,7 +11,7 @@
 @import "paginas/contacto";
 @import "paginas/metodologia";
 @import "paginas/cursos";
-@import "paginas/sedes";
+@import "paginas/escuelas";
 @import "paginas/profesores";
 @import "componentes/header";
 @import "componentes/footer";
@@ -92,7 +92,7 @@ p{
     @include background;
   }
 
-  #bodysedes {
+  #bodyescuelas {
     @include background;
   }
 

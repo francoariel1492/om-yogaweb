@@ -82,8 +82,8 @@
   color: #646464;
 }
 
-#bodysedes {
-  background-image: url(../img/fondos/2.jpg);
+#bodyescuelas {
+  background-image: url(../img/fondos/escuelas.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -275,7 +275,7 @@ p {
     background-position: center;
     background-attachment: fixed;
   }
-  #bodysedes {
+  #bodyescuelas {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
