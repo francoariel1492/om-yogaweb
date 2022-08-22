@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* ///////////////////////CSS SECCIONES/////////////////////////
 
 -FUENTE
@@ -13,6 +19,9 @@
   background-attachment: scroll;
   animation: zoom 22s infinite;
   -webkit-animation: zoom 22s infinite;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 .index .index__boton {
   color: #FFE05D;
@@ -37,6 +46,9 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 .contacto .contacto__boton {
   color: #fff8cd;
@@ -52,6 +64,9 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 #bodycursos {
@@ -59,6 +74,9 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 #bodycursos .list-group-item {
   background-color: rgba(100, 100, 100, 0.8);
@@ -87,6 +105,9 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 #carouselExampleCaptions, #carouselExampleFade, #carouselExampleControls {
@@ -105,6 +126,9 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .header {
@@ -253,26 +277,31 @@ p {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
   }
   .metodologia {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
   }
   #bodycursos {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
   }
   #bodyescuelas {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
   }
   #profesores {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
   }
 }
 @media screen and (max-width: 400px) {

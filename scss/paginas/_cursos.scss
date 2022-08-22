@@ -3,6 +3,9 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 
     .list-group-item {
         background-color: rgb(100, 100, 100, 0.8);

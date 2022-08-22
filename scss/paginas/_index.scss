@@ -7,6 +7,9 @@
     background-attachment: scroll;
     animation: zoom 22s infinite;
     -webkit-animation: zoom 22s infinite;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 
     .index__boton{
       color: map-get($colors , cuarto );
