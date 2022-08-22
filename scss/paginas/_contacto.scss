@@ -4,15 +4,14 @@
     background-position: center;
     background-attachment: fixed;
 
-    .boton{
+    .contacto__boton{
         color: map-get($colors , principal );
         background-color: map-get($colors , tercero );
         transition: 1s;
-
+        
         &:hover{
             background-color: map-get($colors , segundo );
         }
-
     }
     
 }

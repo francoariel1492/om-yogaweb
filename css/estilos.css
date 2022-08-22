@@ -11,15 +11,15 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  animation: zoom 30s infinite;
-  -webkit-animation: zoom 30s infinite;
+  animation: zoom 22s infinite;
+  -webkit-animation: zoom 22s infinite;
 }
-.index .boton, .index #bodycursos .boton--cursos, #bodycursos .index .boton--cursos {
+.index .index__boton {
   color: #FFE05D;
   background-color: #646464;
   transition: 1s;
 }
-.index .boton:hover, .index #bodycursos .boton--cursos:hover, #bodycursos .index .boton--cursos:hover {
+.index .index__boton:hover {
   background-color: #ff9642;
   color: #fff8cd;
 }
@@ -29,7 +29,7 @@
     background-size: 50%;
   }
   100% {
-    background-size: 100%;
+    background-size: 125%;
   }
 }
 .contacto {
@@ -38,12 +38,12 @@
   background-position: center;
   background-attachment: fixed;
 }
-.contacto .boton, .contacto #bodycursos .boton--cursos, #bodycursos .contacto .boton--cursos {
+.contacto .contacto__boton {
   color: #fff8cd;
   background-color: #646464;
   transition: 1s;
 }
-.contacto .boton:hover, .contacto #bodycursos .boton--cursos:hover, #bodycursos .contacto .boton--cursos:hover {
+.contacto .contacto__boton:hover {
   background-color: #ff9642;
 }
 
@@ -100,16 +100,6 @@
   height: 500px;
 }
 
-.carousel .carouseltitle {
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-weight: bolder;
-  font-size: 3rem;
-  text-shadow: 1px 1px 0 #FFE05D;
-  -webkit-text-stroke: 0.1px #646464;
-}
-
 #profesores {
   background-image: url(../img/fondos/profesores.jpg);
   background-size: cover;
@@ -153,22 +143,21 @@
 
 footer {
   background: rgb(255, 150, 66);
-  background: linear-gradient(90deg, rgba(255, 150, 66, 0.7) 0%, rgba(255, 224, 93, 0.7) 50%);
+  background: linear-gradient(90deg, rgba(255, 150, 66, 0.7) 50%, rgba(255, 224, 93, 0.7) 100%);
 }
 footer #colorautor {
   text-decoration: none;
   color: #fff8cd;
+}
+footer #colorautor:hover {
+  color: #FFE05D;
+  transition: 1s;
 }
 footer #itemcolor {
   filter: opacity(0.4) drop-shadow(0 0 0 grey);
 }
 footer #itemcolor:hover {
   filter: opacity(1) drop-shadow(0 0 0 grey);
-}
-
-#colorautor:hover {
-  color: #FFE05D;
-  transition: 1s;
 }
 
 .hvr-grow-shadow {

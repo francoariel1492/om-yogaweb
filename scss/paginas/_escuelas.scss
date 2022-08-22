@@ -4,7 +4,6 @@
     background-position: center;
     background-attachment: fixed;
 }
-
 #carouselExampleCaptions, #carouselExampleFade, #carouselExampleControls {
   margin-top: 10px;
   .carousel-item {
@@ -13,20 +12,6 @@
     }
   }
 }
-
 .carousel-item img {
   height: 500px;
 }
-
-.carousel{
-      .carouseltitle{
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        font-weight: bolder;
-        font-size: 3rem;
-        text-shadow: 
-        1px 1px 0 #FFE05D;
-        -webkit-text-stroke: 0.1px #646464;
-      }
-    }

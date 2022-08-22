@@ -5,10 +5,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    animation: zoom 30s infinite;
-    -webkit-animation: zoom 30s infinite;
+    animation: zoom 22s infinite;
+    -webkit-animation: zoom 22s infinite;
 
-    .boton{
+    .index__boton{
       color: map-get($colors , cuarto );
       background-color: map-get($colors , tercero );
       transition: 1s;
@@ -21,11 +21,12 @@
   }
 }
 
+// Animacion de background de index
 @keyframes zoom {
     0% {
       background-size: 50%;
     }
     100% {
-      background-size: 100%;
+      background-size: 125%;
     }
 }  

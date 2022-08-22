@@ -2,15 +2,14 @@ footer {
   background: rgb(255, 150, 66);
   background: linear-gradient(
     90deg,
-    rgba(255, 150, 66, 0.7) 0%,
-    rgba(255, 224, 93, 0.7) 50%);
+    rgba(255, 150, 66, 0.7) 50%,
+    rgba(255, 224, 93, 0.7) 100%);
 
     #colorautor {
         text-decoration: none;
-        color: map-get($colors , principal );}
-        ;
-        
-
+        color: map-get($colors , principal );
+        &:hover{color: map-get($colors , cuarto );
+            transition: 1s}}
     #itemcolor{
         filter: opacity(0.4) drop-shadow(0 0 0 grey);
 
@@ -19,12 +18,6 @@ footer {
         }
     }
 }
-
-#colorautor:hover {
-    
-    color: map-get($colors , cuarto );
-    transition: 1s}
-    ;
 
 .hvr-grow-shadow {
     display: inline-block;
