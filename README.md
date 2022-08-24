@@ -7,4 +7,4 @@ Hecho por Franco Ariel Parente
 
 Profesor  Cesar Gimenez Lascano
 
-Tuto Nicolas Rodriguez 
+Tutor Nicolas Rodriguez 
